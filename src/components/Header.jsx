@@ -55,6 +55,8 @@ export function Header() {
             <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
             <li><a href="#admission" onClick={toggleMenu}>Admission</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+            <li><a href="#portal" onClick={toggleMenu}>E-Portal</a></li>
+            <li><a href="#gallery" onClick={toggleMenu}>Gallery</a></li>
           </ul>
 
           <div className="mobile-button-group">
