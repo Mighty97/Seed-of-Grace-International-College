@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import CarouselImageOne from  '../assets/1.jpg'
+import CarouselImageOne from  '../assets/one.jpg'
+import CarouselImageTwo from '../assets/two.jpg'
+import CarouselImageThree from '../assets/three.jpg'
+import CarouselImageFour from '../assets/four.jpg'
 import './Carousel.css'
 
 export function Carousel() {
@@ -10,21 +13,21 @@ export function Carousel() {
   const slides = [
     {
       image: CarouselImageOne,
-      title: 'Welcome to Our University',
+      title: 'Welcome to Our College',
       description: 'Empowering minds and shaping futures through excellence in education and innovation.'
     },
     {
-      image: 'https://picsum.photos/1600/900?random=2',
+      image: CarouselImageTwo,
       title: 'World-Class Education',
       description: 'Join our diverse community of learners and discover endless opportunities for growth and success.'
     },
     {
-      image: 'https://picsum.photos/1600/900?random=3',
+      image: CarouselImageThree,
       title: 'Modern Campus Facilities',
       description: 'Experience state-of-the-art facilities designed to enhance your learning experience.'
     },
     {
-      image: 'https://picsum.photos/1600/900?random=4',
+      image: CarouselImageFour,
       title: 'Global Opportunities',
       description: 'Connect with students worldwide and prepare for a successful international career.'
     }

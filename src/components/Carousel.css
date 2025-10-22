@@ -18,8 +18,9 @@
           height: 100%;
           position: relative;
           display: flex;
-          align-items: center;
+          align-items: flex-end;
           justify-content: center;
+          padding-bottom: 5px;
         }
 
         .carousel-image {
@@ -53,13 +54,13 @@
           padding: 2rem;
           max-width: 900px;
           animation: fadeInUp 0.8s ease-out;
-          background: rgba(0, 0, 0, 0.4);
+          background: rgba(0, 0, 0, 0.1);
           border-radius: 20px;
         }
         
         @supports (backdrop-filter: blur(10px)) {
           .carousel-content {
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(1px);
           }
         }
 
