@@ -14,7 +14,7 @@ export function Header() {
       <header className="header">
         <div className="header-container">
           <div className="logo-section">
-            <div className="logo">E</div>
+            <div className="logo"></div>
             <div className="brand-text">EduSchool</div>
           </div>
 
