@@ -9,7 +9,7 @@ export function Carousel() {
 
   const slides = [
     {
-      image: {CarouselImageOne},
+      image: CarouselImageOne,
       title: 'Welcome to Our University',
       description: 'Empowering minds and shaping futures through excellence in education and innovation.'
     },
