@@ -55,7 +55,12 @@
           animation: fadeInUp 0.8s ease-out;
           background: rgba(0, 0, 0, 0.4);
           border-radius: 20px;
-          backdrop-filter: blur(10px);
+        }
+        
+        @supports (backdrop-filter: blur(10px)) {
+          .carousel-content {
+            backdrop-filter: blur(10px);
+          }
         }
 
         @keyframes fadeInUp {
@@ -104,6 +109,12 @@
           cursor: pointer;
           transition: all 0.3s ease;
           z-index: 10;
+        }
+
+        @supports (backdrop-filter: blur(10px)) {
+          .carousel-nav-btn {
+            backdrop-filter: blur(10px);
+          }
         }
 
         .carousel-nav-btn:hover {
