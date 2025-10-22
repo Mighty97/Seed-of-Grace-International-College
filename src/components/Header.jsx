@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import SchoolLogo from '../assets/sgiclogo.jpg'
 import './Header.css'
 
 export function Header() {
@@ -14,8 +15,8 @@ export function Header() {
       <header className="header">
         <div className="header-container">
           <div className="logo-section">
-            <div className="logo"></div>
-            <div className="brand-text">EduSchool</div>
+              <img className="logo" src={SchoolLogo} alt="" />
+            <div className="brand-text">Seed of Grace </div>
           </div>
 
           <nav>
@@ -42,7 +43,7 @@ export function Header() {
         <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
           <div className="mobile-menu-header">
             <div className="logo-section">
-              <div className="logo">E</div>
+              <img className="logo" src={SchoolLogo} alt="" />
               <div className="brand-text">EduSchool</div>
             </div>
             <button className="mobile-menu-btn" onClick={toggleMenu}>
