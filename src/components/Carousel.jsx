@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import CarouselImageOne from  '../assets/1.jpg'
 import './Carousel.css'
 
 export function Carousel() {
@@ -8,7 +9,7 @@ export function Carousel() {
 
   const slides = [
     {
-      image: 'https://picsum.photos/1600/900?random=1',
+      image: {CarouselImageOne},
       title: 'Welcome to Our University',
       description: 'Empowering minds and shaping futures through excellence in education and innovation.'
     },
@@ -75,7 +76,7 @@ export function Carousel() {
                 className="carousel-image"
               />
               <div className="carousel-content">
-                <h1 className="carousel-title">{slide.title}</h1>
+                <h1 className="carousel-title" >{slide.title}</h1>
                 <p className="carousel-description">{slide.description}</p>
               </div>
             </div>
