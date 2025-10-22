@@ -46,11 +46,11 @@ export function Carousel() {
     if (!isAutoPlaying) return;
     
     const interval = setInterval(() => {
-      nextSlide();
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentSlide, isAutoPlaying]);
+  }, [isAutoPlaying, slides.length]);
 
   const handleMouseEnter = () => setIsAutoPlaying(false);
   const handleMouseLeave = () => setIsAutoPlaying(true);
