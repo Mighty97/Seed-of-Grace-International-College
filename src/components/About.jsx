@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Book, Target, Eye, Award } from 'lucide-react';
 import './About.css'
 
-const AboutUsFlip() {
+export function AboutUsFlip() {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -111,5 +111,3 @@ const AboutUsFlip() {
     </>
   );
 };
-
-export default AboutUsFlip;
