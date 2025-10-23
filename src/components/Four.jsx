@@ -62,11 +62,14 @@ export function FourColumnComponent(){
 
           {/* Column 3 - Image Container */}
           <div className="image-column">
-            <img 
-              src={CampusVideo} 
-              alt="Campus Life" 
-              className="image-column-photo"
-            />
+            <video 
+              autoPlay
+              muted
+              loop
+              playInline >
+              <source src={CampusVideo} type='video/mp4' />
+              </video>
+            
             <div className="image-overlay">
               <p className="image-overlay-text">Experience Campus Life</p>
             </div>
