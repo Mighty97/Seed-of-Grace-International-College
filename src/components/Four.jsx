@@ -1,5 +1,8 @@
 import React from 'react';
 import { UserCircle, Users, FileText, GraduationCap, Heart, Zap } from 'lucide-react';
+import PrincipalImage from '../assets/principal.jpg'
+import FounderImage from '../assets/founder.jpg'
+import CampusVideo from '../assets/camp.mp4' 
 import './Four.css'
 
 export function FourColumnComponent(){
@@ -13,7 +16,7 @@ export function FourColumnComponent(){
           <div className="principal-column">
             <div className="principal-image-wrapper">
               <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=300&fit=crop" 
+                src={PrincipalImage}
                 alt="Principal" 
                 className="principal-image"
               />
@@ -25,7 +28,7 @@ export function FourColumnComponent(){
               </h3>
               <p className="principal-role">Principal</p>
               <p className="principal-message">
-                Welcome to our institution! It is my privilege to lead this community 
+                Welcome to our College! It is my privilege to lead this community 
                 of learners. We are committed to providing exceptional education that 
                 prepares students for a bright future. Together, we create an 
                 environment where every student can thrive and reach their full potential.
@@ -37,7 +40,7 @@ export function FourColumnComponent(){
           <div className="founder-column">
             <div className="founder-image-wrapper">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" 
+                src={FounderImage}
                 alt="Founder" 
                 className="founder-image"
               />
@@ -60,7 +63,7 @@ export function FourColumnComponent(){
           {/* Column 3 - Image Container */}
           <div className="image-column">
             <img 
-              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=800&fit=crop" 
+              src={CampusVideo} 
               alt="Campus Life" 
               className="image-column-photo"
             />
