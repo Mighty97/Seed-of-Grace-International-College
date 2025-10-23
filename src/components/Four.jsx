@@ -21,7 +21,7 @@ export function FourColumnComponent(){
             <div className="principal-content">
               <h3 className="principal-title">
                 <UserCircle size={24} color="#667eea" />
-                Dr. James Anderson
+                Pastor Olubude Mayowa
               </h3>
               <p className="principal-role">Principal</p>
               <p className="principal-message">
@@ -45,7 +45,7 @@ export function FourColumnComponent(){
             <div className="founder-content">
               <h3 className="founder-title">
                 <Users size={24} color="#667eea" />
-                Prof. Robert Williams
+                Dr. Bolaji Idowu
               </h3>
               <p className="founder-role">Founder & Chairman</p>
               <p className="founder-speech">
