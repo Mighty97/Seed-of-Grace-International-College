@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Book, Target, Eye, Award } from 'lucide-react';
+import AchieverImage from '../assets/achiever.jpg'
 import './About.css'
 
 export function AboutUsFlip() {
@@ -88,23 +89,23 @@ export function AboutUsFlip() {
             {/* Column 3 - Student of the Week Banner */}
             <div className="student-banner">
               <img 
-                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" 
+                src={AchieverImage}
                 alt="Student of the Week" 
                 className="student-banner-bg"
               />
-              <div className="student-banner-overlay">
-                <div className="student-badge">
-                  <Award size={18} />
-                  STUDENT OF THE WEEK
+              <div className="student-banner-overlay" >
+                  <div className="student-badge">
+                    <Award size={18} />
+                    A GOAL GETTER
+                  </div>
+                  <h3 className="student-name">Rufus Joshua</h3>
+                  <p className="student-grade">24/25 Set - Science Department</p>
+                  <p className="student-achievement">
+                    Outstanding performance in the 2025 UTME with a score of 300+. 
+                    Demonstrated exceptional leadership and innovation.
+                  </p>
                 </div>
-                <h3 className="student-name">Emma Thompson</h3>
-                <p className="student-grade">Grade 10 - Science Department</p>
-                <p className="student-achievement">
-                  Outstanding performance in the National Science Fair. 
-                  Demonstrated exceptional leadership and innovation.
-                </p>
               </div>
-            </div>
           </div>
         </div>
       </section>
