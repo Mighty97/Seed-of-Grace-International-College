@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Book, Target, Eye, Award } from 'lucide-react';
+import './About.css'
 
-const AboutUsFlip = () => {
+const AboutUsFlip() {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
