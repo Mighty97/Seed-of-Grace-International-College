@@ -1,0 +1,297 @@
+
+        .four-column-section {
+          padding: 5rem 2rem;
+          background: #f7fafc;
+          min-height: 100vh;
+        }
+
+        .four-column-container {
+          max-width: 1400px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+        }
+
+        /* Column 1 - Principal */
+        .principal-column {
+          background: white;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .principal-column:hover {
+          transform: translateY(-10px);
+        }
+
+        .principal-image-wrapper {
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+        }
+
+        .principal-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+        }
+
+        .principal-column:hover .principal-image {
+          transform: scale(1.1);
+        }
+
+        .principal-content {
+          padding: 1.5rem;
+        }
+
+        .principal-title {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #1a202c;
+          margin-bottom: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .principal-role {
+          font-size: 0.85rem;
+          color: #667eea;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        .principal-message {
+          font-size: 0.95rem;
+          line-height: 1.7;
+          color: #4a5568;
+        }
+
+        /* Column 2 - Founder */
+        .founder-column {
+          background: white;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .founder-column:hover {
+          transform: translateY(-10px);
+        }
+
+        .founder-image-wrapper {
+          width: 100%;
+          height: 200px;
+          overflow: hidden;
+        }
+
+        .founder-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+        }
+
+        .founder-column:hover .founder-image {
+          transform: scale(1.1);
+        }
+
+        .founder-content {
+          padding: 1.5rem;
+        }
+
+        .founder-title {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #1a202c;
+          margin-bottom: 0.5rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .founder-role {
+          font-size: 0.85rem;
+          color: #667eea;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        .founder-speech {
+          font-size: 0.95rem;
+          line-height: 1.7;
+          color: #4a5568;
+        }
+
+        /* Column 3 - Image Container */
+        .image-column {
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          position: relative;
+          transition: transform 0.3s ease;
+        }
+
+        .image-column:hover {
+          transform: scale(1.05);
+        }
+
+        .image-column-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          min-height: 400px;
+        }
+
+        .image-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 1.5rem;
+          background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+          color: white;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        .image-column:hover .image-overlay {
+          opacity: 1;
+        }
+
+        .image-overlay-text {
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+
+        /* Column 4 - CTA Buttons */
+        .cta-column {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .cta-button {
+          background: white;
+          border: none;
+          border-radius: 15px;
+          padding: 2rem 1.5rem;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          transition: all 0.3s ease;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .cta-button::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 5px;
+          height: 100%;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          transform: scaleY(0);
+          transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover::before {
+          transform: scaleY(1);
+        }
+
+        .cta-button:hover {
+          transform: translateX(10px);
+          box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 12px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+        }
+
+        .cta-text {
+          flex: 1;
+        }
+
+        .cta-title {
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: #1a202c;
+          margin-bottom: 0.3rem;
+        }
+
+        .cta-description {
+          font-size: 0.85rem;
+          color: #718096;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+          .four-column-container {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .four-column-section {
+            padding: 3rem 1rem;
+          }
+
+          .four-column-container {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+
+          .image-column-photo {
+            min-height: 300px;
+          }
+
+          .cta-button {
+            padding: 1.5rem 1rem;
+          }
+
+          .principal-content,
+          .founder-content {
+            padding: 1.2rem;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .principal-title,
+          .founder-title {
+            font-size: 1.1rem;
+          }
+
+          .principal-message,
+          .founder-speech {
+            font-size: 0.9rem;
+          }
+
+          .cta-title {
+            font-size: 1rem;
+          }
+
+          .cta-description {
+            font-size: 0.8rem;
+          }
+
+          .cta-icon {
+            width: 45px;
+            height: 45px;
+          }
+        }
+     
