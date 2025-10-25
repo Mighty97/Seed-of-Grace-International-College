@@ -15,7 +15,7 @@ export function Header() {
       <header className="header">
         <div className="header-container">
           <div className="logo-section">
-              <img className="logo" src={SchoolLogo} alt="" />
+              <link to="/"> <img className="logo" src={SchoolLogo} alt="" /></link>
             <div className="brand-text"> Seed of Grace <br />  <span className='intl'> International College </span></div>
           </div>
 
