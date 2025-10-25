@@ -40,6 +40,10 @@
           font-weight: 700;
           color: #1a202c;
         }
+        
+        .intl {
+          font-size: 20px;
+        }
 
         .nav-links {
           display: flex;

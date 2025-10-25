@@ -16,7 +16,7 @@ export function Header() {
         <div className="header-container">
           <div className="logo-section">
               <img className="logo" src={SchoolLogo} alt="" />
-            <div className="brand-text">Seed of Grace </div>
+            <div className="brand-text"> Seed of Grace <br />  <span className='intl'> International College </span></div>
           </div>
 
           <nav>
@@ -45,7 +45,7 @@ export function Header() {
           <div className="mobile-menu-header">
             <div className="logo-section">
               <img className="logo" src={SchoolLogo} alt="" />
-              <div className="brand-text">EduSchool</div>
+              <div className="brand-text">Seed of Grace Intl. College</div>
             </div>
             <button className="mobile-menu-btn" onClick={toggleMenu}>
               <X size={28} />
