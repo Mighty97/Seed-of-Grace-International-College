@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import CarouselImageOne from  '../assets/one.jpg'
+//import CarouselImageOne from  '../assets/one.jpg'
 import CarouselImageTwo from '../assets/two.jpg'
 import CarouselImageThree from '../assets/three.jpg'
 import CarouselImageFour from '../assets/four.jpg'
@@ -12,7 +12,7 @@ export function Carousel() {
 
   const slides = [
     {
-      image: CarouselImageOne,
+      image: "https://collection.cloudinary.com/dsqlkjppc/edceb0ec53dca4d9d523411ae1043fb7",
       title: 'Welcome to Our College',
       description: 'Empowering minds and shaping futures through excellence in education and innovation.'
     },
