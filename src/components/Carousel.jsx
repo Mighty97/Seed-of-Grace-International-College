@@ -12,7 +12,7 @@ export function Carousel() {
 
   const slides = [
     {
-      image: "https://collection.cloudinary.com/dsqlkjppc/edceb0ec53dca4d9d523411ae1043fb7",
+      image: 'https://collection.cloudinary.com/dsqlkjppc/edceb0ec53dca4d9d523411ae1043fb7',
       title: 'Welcome to Our College',
       description: 'Empowering minds and shaping futures through excellence in education and innovation.'
     },
