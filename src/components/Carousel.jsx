@@ -12,7 +12,7 @@ export function Carousel() {
 
   const slides = [
     {
-      image: 'https://imgur.com/a/uxplx1c',
+      image: 'https://photos.app.goo.gl/gjDrjfoVFvVV6WFZ9',
       title: 'Welcome to Our College',
       description: 'Empowering minds and shaping futures through excellence in education and innovation.'
     },
