@@ -24,7 +24,7 @@ export function Header() {
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#admission">Admission</a></li>
-              <li><a href="#portal">E-Portal</a></li>
+              <li><a href="realschoolmanagementsystem.netlify.app/">E-Portal</a></li>
               <li><a href="#blog">Blog</a></li>
               <li><a href="#gallery">Gallery</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -56,7 +56,7 @@ export function Header() {
             <li><a href="#home" onClick={toggleMenu}>Home</a></li>
             <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
             <li><a href="#admission" onClick={toggleMenu}>Admission</a></li>
-            <li><a href="#portal" onClick={toggleMenu} >E-Portal</a></li>
+            <li><a href="realschoolmanagementsystem.netlify.app/" onClick={toggleMenu} >E-Portal</a></li>
             <li><a href="#blog" onClick={toggleMenu} >Blog</a></li>
             <li><a href="#gallery" onClick={toggleMenu}>Gallery</a></li>
             <li><a href="#contact" onClick={toggleMenu} >Contact</a></li>
