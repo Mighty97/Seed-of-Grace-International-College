@@ -1,5 +1,6 @@
 import {Routes, Route,} from 'react-router'
 import { HomePage } from './pages/Home/Homepage'
+import { AboutUsPage } from './pages/About/AboutUsPage'
 import { Dashboard } from './pages/Portal/Dashboard'
 import './App.css'
 
@@ -8,6 +9,7 @@ function App() {
   <>
     <Routes>
       <Route path='/' element={<HomePage />} />
+      <Route path='about' element={<AboutUsPage />} />
       <Route path='E-portal' element={<Dashboard />} />
     </Routes>
   </>
