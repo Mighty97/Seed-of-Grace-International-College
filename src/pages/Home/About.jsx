@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Book, Target, Eye, Award } from 'lucide-react';
-import AchieverImage from '../assets/achiever.jpg'
+import AchieverImage from '../../assets/achiever.jpg'
 import './About.css'
 
 export function AboutUsFlip() {

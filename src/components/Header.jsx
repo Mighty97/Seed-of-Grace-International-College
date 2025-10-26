@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router'
 import { Menu, X } from 'lucide-react';
 import SchoolLogo from '../assets/sgiclogo.jpg'
 import './Header.css'
@@ -15,16 +16,16 @@ export function Header() {
       <header className="header">
         <div className="header-container">
           <div className="logo-section">
-              <a href="/"> <img className="logo" src={SchoolLogo} alt="" /></a>
+              <Link to="/"> <img className="logo" src={SchoolLogo} alt="" /></Link>
             <div className="brand-text"> Seed of Grace <br />  <span className='intl'> International College </span></div>
           </div>
 
           <nav>
             <ul className="nav-links">
-              <li><a href="#home">Home</a></li>
+              <li><Link to='/' >Home</Link></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#admission">Admission</a></li>
-              <li><a href="#portal">E-Portal</a></li>
+              <li><Link to='E-Portal'>E-Portal</Link></li>
               <li><a href="#blog">Blog</a></li>
               <li><a href="#gallery">Gallery</a></li>
               <li><a href="#contact">Contact</a></li>
@@ -44,7 +45,7 @@ export function Header() {
         <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
           <div className="mobile-menu-header">
             <div className="logo-section">
-              <img className="logo" src={SchoolLogo} alt="" />
+              <Link to='/'><img className="logo" src={SchoolLogo} alt="" /></Link>
               <div className="brand-text">Seed of Grace Intl. College</div>
             </div>
             <button className="mobile-menu-btn" onClick={toggleMenu}>
@@ -56,7 +57,7 @@ export function Header() {
             <li><a href="#home" onClick={toggleMenu}>Home</a></li>
             <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
             <li><a href="#admission" onClick={toggleMenu}>Admission</a></li>
-            <li><a href="#portal" onClick={toggleMenu} >E-Portal</a></li>
+            <li><Link to='E-Portal' onClick={toggleMenu} >E-Portal</Link></li>
             <li><a href="#blog" onClick={toggleMenu} >Blog</a></li>
             <li><a href="#gallery" onClick={toggleMenu}>Gallery</a></li>
             <li><a href="#contact" onClick={toggleMenu} >Contact</a></li>

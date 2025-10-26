@@ -1,8 +1,8 @@
 import React from 'react';
 import { UserCircle, Users, FileText, GraduationCap, Heart, Zap } from 'lucide-react';
-import PrincipalImage from '../assets/principal.jpg'
-import FounderImage from '../assets/founder.jpg'
-import CampusVideo from '../assets/camp.mp4' 
+import PrincipalImage from '../../assets/principal.jpg'
+import FounderImage from '../../assets/founder.jpg'
+import CampusVideo from '../../assets/camp.mp4' 
 import './Four.css'
 
 export function FourColumnComponent(){

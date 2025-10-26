@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import CarouselImageOne from  '../assets/one.jpg'
-import CarouselImageTwo from '../assets/two.jpg'
-import CarouselImageThree from '../assets/three.jpg'
-import CarouselImageFour from '../assets/four.jpg'
+import CarouselImageOne from  '../../assets/one.jpg'
+import CarouselImageTwo from '../../assets/two.jpg'
+import CarouselImageThree from '../../assets/three.jpg'
+import CarouselImageFour from '../../assets/four.jpg'
 import './Carousel.css'
 
 export function Carousel() {
