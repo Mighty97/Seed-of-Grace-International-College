@@ -1,0 +1,308 @@
+
+        .staff-section {
+          padding: 5rem 2rem;
+          background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+          min-height: 100vh;
+        }
+
+        .staff-container {
+          max-width: 1400px;
+          margin: 0 auto;
+        }
+
+        .staff-header {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+
+        .staff-title {
+          font-size: 3rem;
+          font-weight: 800;
+          color: #1a202c;
+          margin-bottom: 0.5rem;
+        }
+
+        .staff-subtitle {
+          font-size: 1.2rem;
+          color: #4a5568;
+        }
+
+        /* Main Staff Cards */
+        .main-staff-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          margin-bottom: 4rem;
+        }
+
+        .main-staff-card {
+          background: white;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+          transition: all 0.4s ease;
+          position: relative;
+        }
+
+        .main-staff-card:hover {
+          transform: translateY(-15px);
+          box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+        }
+
+        .main-staff-image-wrapper {
+          position: relative;
+          overflow: hidden;
+          height: 350px;
+        }
+
+        .main-staff-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.6s ease;
+        }
+
+        .main-staff-card:hover .main-staff-image {
+          transform: scale(1.1);
+        }
+
+        .main-staff-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+          padding: 2rem 1.5rem 1rem;
+          transform: translateY(50%);
+          transition: transform 0.4s ease;
+        }
+
+        .main-staff-card:hover .main-staff-overlay {
+          transform: translateY(0);
+        }
+
+        .staff-social {
+          display: flex;
+          gap: 0.8rem;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        }
+
+        .main-staff-card:hover .staff-social {
+          opacity: 1;
+        }
+
+        .social-icon {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background: rgba(255,255,255,0.2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(10px);
+        }
+
+        .social-icon:hover {
+          background: rgba(255,255,255,0.4);
+          transform: translateY(-3px);
+        }
+
+        .main-staff-info {
+          padding: 1.5rem;
+          text-align: center;
+        }
+
+        .main-staff-name {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #1a202c;
+          margin-bottom: 0.3rem;
+        }
+
+        .main-staff-position {
+          font-size: 1rem;
+          color: #667eea;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        .main-staff-contact {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          font-size: 0.9rem;
+          color: #4a5568;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+        }
+
+        /* Other Staff Scrolling Section */
+        .other-staff-section {
+          margin-top: 3rem;
+        }
+
+        .section-divider {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+
+        .divider-title {
+          font-size: 2rem;
+          font-weight: 700;
+          color: #1a202c;
+          margin-bottom: 0.5rem;
+        }
+
+        .divider-line {
+          width: 100px;
+          height: 4px;
+          background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+          margin: 0 auto;
+          border-radius: 2px;
+        }
+
+        .scroll-container {
+          position: relative;
+          overflow: hidden;
+          padding: 2rem 0;
+        }
+
+        .scroll-wrapper {
+          display: flex;
+          gap: 2rem;
+          overflow-x: hidden;
+          scroll-behavior: smooth;
+        }
+
+        .scroll-content {
+          display: flex;
+          gap: 2rem;
+          animation: scroll-infinite 30s linear infinite;
+        }
+
+        @keyframes scroll-infinite {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .other-staff-card {
+          min-width: 250px;
+          background: white;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease;
+          cursor: pointer;
+          flex-shrink: 0;
+        }
+
+        .other-staff-card:hover {
+          transform: translateY(-10px) scale(1.05);
+          box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .other-staff-image-wrapper {
+          position: relative;
+          overflow: hidden;
+          height: 250px;
+        }
+
+        .other-staff-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.5s ease;
+        }
+
+        .other-staff-card:hover .other-staff-image {
+          transform: scale(1.15) rotate(2deg);
+        }
+
+        .other-staff-name-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background: linear-gradient(to top, rgba(102, 126, 234, 0.95), transparent);
+          padding: 1.5rem 1rem;
+          color: white;
+          text-align: center;
+        }
+
+        .other-staff-name {
+          font-size: 1.1rem;
+          font-weight: 700;
+        }
+
+        @media (max-width: 1200px) {
+          .main-staff-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .staff-section {
+            padding: 3rem 1rem;
+          }
+
+          .staff-title {
+            font-size: 2.5rem;
+          }
+
+          .main-staff-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+          }
+
+          .main-staff-image-wrapper {
+            height: 300px;
+          }
+
+          .other-staff-card {
+            min-width: 200px;
+          }
+
+          .other-staff-image-wrapper {
+            height: 200px;
+          }
+        }
+
+        @media (max-width: 640px) {
+          .staff-title {
+            font-size: 2rem;
+          }
+
+          .staff-subtitle {
+            font-size: 1rem;
+          }
+
+          .divider-title {
+            font-size: 1.5rem;
+          }
+
+          .main-staff-name {
+            font-size: 1.3rem;
+          }
+
+          .main-staff-position {
+            font-size: 0.9rem;
+          }
+
+          .other-staff-card {
+            min-width: 180px;
+          }
+        }
+     
