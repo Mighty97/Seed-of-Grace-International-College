@@ -7,6 +7,7 @@ import { MeetStaff } from './Staff'
 import { AwardsTestimonialsQuotes } from './Awards'
 import { NewsEvents } from './News'
 import { ContactForm } from './Contact'
+import { Footer } from '../../components/Footer'
 
 export function HomePage() {
   return(
@@ -20,6 +21,7 @@ export function HomePage() {
       <AwardsTestimonialsQuotes />
       <NewsEvents />
       <ContactForm />
+      <Footer />
     </>
   );
 }
