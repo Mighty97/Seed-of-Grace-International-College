@@ -1,0 +1,107 @@
+
+        .scroll-to-top {
+          position: fixed;
+          bottom: 2rem;
+          right: 2rem;
+          width: 60px;
+          height: 60px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          border: none;
+          border-radius: 50%;
+          color: white;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+          z-index: 1000;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(20px) scale(0.8);
+          transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .scroll-to-top.visible {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0) scale(1);
+        }
+
+        .scroll-to-top:hover {
+          transform: translateY(-5px) scale(1.1);
+          box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+        }
+
+        .scroll-to-top:active {
+          transform: translateY(-2px) scale(1.05);
+        }
+
+        .scroll-to-top::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.3);
+          animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+
+        @keyframes pulse-ring {
+          0% {
+            transform: translate(-50%, -50%) scale(0.8);
+            opacity: 1;
+          }
+          80%, 100% {
+            transform: translate(-50%, -50%) scale(1.4);
+            opacity: 0;
+          }
+        }
+
+        .scroll-icon {
+          position: relative;
+          z-index: 1;
+          animation: bounce-arrow 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce-arrow {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-8px);
+          }
+        }
+
+        .scroll-to-top:hover .scroll-icon {
+          animation: bounce-arrow-fast 0.6s ease-in-out infinite;
+        }
+
+        @keyframes bounce-arrow-fast {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .scroll-to-top {
+            width: 50px;
+            height: 50px;
+            bottom: 1.5rem;
+            right: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .scroll-to-top {
+            width: 45px;
+            height: 45px;
+            bottom: 1rem;
+            right: 1rem;
+          }
+        }
