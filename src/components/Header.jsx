@@ -33,8 +33,8 @@ export function Header() {
           </nav>
 
           <div className="button-group">
-            <button className="btn btn-primary">Apply Now</button>
-            <button className="btn btn-secondary">E-Portal</button>
+            <button className="btn btn-primary"><Link to='admission'> Apply Now </Link></button>
+            <button className="btn btn-secondary"><Link to='E-Portal'> E-Portal</Link></button>
           </div>
 
           <button className="mobile-menu-btn" onClick={toggleMenu}>
@@ -65,8 +65,8 @@ export function Header() {
           </ul>
 
           <div className="mobile-button-group">
-            <button className="btn btn-primary" onClick={toggleMenu}>Apply Now</button>
-            <button className="btn btn-secondary" onClick={toggleMenu}>E-Portal</button>
+            <button className="btn btn-primary" onClick={toggleMenu}><Link to='admission'> Apply Now </Link></button>
+            <button className="btn btn-secondary" onClick={toggleMenu}><Link to='E-Portal'> E-Portal</Link></button>
           </div>
         </div>
       </header>
