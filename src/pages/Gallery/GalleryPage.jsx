@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { X, ZoomIn, ChevronLeft, ChevronRight, Calendar } from 'lucide-react';
+import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
+import { ScrollToTop } from '../../components/ScrollUpButton';
 import './GalleryPage.css'
 
 export function GalleryPage() {
@@ -108,7 +111,7 @@ export function GalleryPage() {
 
   return (
     <>
-     
+     <Header />
 
       <div className="gallery-page">
         {/* Hero Section */}
@@ -215,6 +218,8 @@ export function GalleryPage() {
           </div>
         )}
       </div>
+      <ScrollToTop />
+      <Footer />
     </>
   );
 };

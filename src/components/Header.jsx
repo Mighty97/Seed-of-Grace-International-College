@@ -25,7 +25,7 @@ export function Header() {
               <li><Link to='/' >Home</Link></li>
               <li><Link to="about">About Us</Link></li>
               <li><Link to="admission">Admission</Link></li>
-              <li><Link to='E-Portal'>E-Portal</Link></li>
+              <li><Link to='Portal'>E-Portal</Link></li>
               <li><Link to="blog">Blog</Link></li>
               <li><Link to="gallery">Gallery</Link></li>
               <li><Link to="contact">Contact</Link></li>
@@ -57,7 +57,7 @@ export function Header() {
             <li><Link to="home" onClick={toggleMenu}>Home</Link></li>
             <li><Link to="about" onClick={toggleMenu}>About Us</Link></li>
             <li><Link to="admission" onClick={toggleMenu}>Admission</Link></li>
-            <li><Link to='E-Portal' onClick={toggleMenu} >E-Portal</Link></li>
+            <li><Link to='Portal' onClick={toggleMenu} >E-Portal</Link></li>
             <li><Link to="blog" onClick={toggleMenu} >Blog</Link></li>
             <li><Link to="gallery" onClick={toggleMenu}>Gallery</Link></li>
             <li><Link to="contact" onClick={toggleMenu} >Contact</Link></li>
