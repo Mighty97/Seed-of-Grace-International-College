@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  BookOpen, Users, Target, Award, Building, Lightbulb, 
-  Trophy, Heart, Globe, Sparkles, CheckCircle, Star 
+import {
+  BookOpen, Users, Target, Award, Building, Lightbulb,
+  Trophy, Heart, Globe, Sparkles, CheckCircle, Star
 } from 'lucide-react';
+import { Header } from '../../components/Header'
+import { ScrollToTop } from '../../components/ScrollUpButton'
+import { Footer } from '../../components/Footer'
 import './AboutUsPage.css'
 
 export function AboutUsPage() {
@@ -123,15 +126,15 @@ export function AboutUsPage() {
 
   return (
     <>
-      
-
+      <ScrollToTop />
+      <Header />
       <div className="about-page">
         {/* Hero Section */}
         <div className="about-hero">
           <div className="hero-content">
             <h1 className="hero-title">About Seed of Grace</h1>
             <p className="hero-subtitle">
-              Nurturing excellence, inspiring innovation, and shaping future leaders 
+              Nurturing excellence, inspiring innovation, and shaping future leaders
               through quality education and holistic development
             </p>
           </div>
@@ -144,21 +147,21 @@ export function AboutUsPage() {
           </div>
           <div className="history-content">
             <p>
-              Seed of Grace International College was established in 2005 with a vision to provide 
-              world-class education that nurtures young minds and prepares them for global challenges. 
-              What began as a small institution with just 50 students has now grown into a prestigious 
+              Seed of Grace International College was established in 2005 with a vision to provide
+              world-class education that nurtures young minds and prepares them for global challenges.
+              What began as a small institution with just 50 students has now grown into a prestigious
               educational establishment serving over 2,000 students from diverse backgrounds.
             </p>
             <p>
-              Over the years, we have consistently maintained our commitment to academic excellence, 
-              innovation in teaching methodologies, and holistic student development. Our journey has 
-              been marked by numerous achievements, recognition from educational bodies, and most 
-              importantly, the success stories of our alumni who are making significant contributions 
+              Over the years, we have consistently maintained our commitment to academic excellence,
+              innovation in teaching methodologies, and holistic student development. Our journey has
+              been marked by numerous achievements, recognition from educational bodies, and most
+              importantly, the success stories of our alumni who are making significant contributions
               in various fields worldwide.
             </p>
             <p>
-              Today, Seed of Grace stands as a beacon of quality education, combining traditional 
-              values with modern teaching techniques to create an environment where every child can 
+              Today, Seed of Grace stands as a beacon of quality education, combining traditional
+              values with modern teaching techniques to create an environment where every child can
               discover their potential and pursue their dreams with confidence.
             </p>
           </div>
@@ -218,12 +221,12 @@ export function AboutUsPage() {
             {facilities.map((facility, index) => {
               const Icon = facility.icon;
               return (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="facility-card"
                   style={{ '--facility-color': facility.color }}
                 >
-                  <div 
+                  <div
                     className="facility-icon"
                     style={{ background: facility.color }}
                   >
@@ -261,6 +264,7 @@ export function AboutUsPage() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
