@@ -4,6 +4,7 @@ import { AboutUsPage } from './pages/About/AboutUsPage'
 import { AdmissionPage } from './pages/Admission/AdmissionPage'
 import { Dashboard } from './pages/Portal/Dashboard'
 import { GalleryPage } from './pages/Gallery/GalleryPage'
+import { ContactPage } from './pages/Contact/ContactUsPage'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path='admission' element={<AdmissionPage />} />
       <Route path='portal' element={<Dashboard />} />
       <Route path='gallery' element={<GalleryPage />} />
+      <Route path='contact' element={<ContactPage />} />
     </Routes>
   </>
  )
