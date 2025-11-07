@@ -48,7 +48,7 @@ export function FourColumnComponent(){
             <div className="founder-content">
               <h3 className="founder-title">
                 <Users size={24} color="#667eea" />
-                Dr. Bolaji Idowu
+                Dr. John Idowu
               </h3>
               <p className="founder-role">Founder & Chairman</p>
               <p className="founder-speech">
